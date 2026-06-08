@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descubre el Garden de SA Jardinería en Valldemossa: plantas de temporada, autóctonas, cactuario, bonsáis, orquídeas, interior, macetas y antigüedades." />
+  <meta name="theme-color" content="#3A332F" />
+  <title>Garden | SA Jardinería · Mallorca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/sendero-vegetacion.jpg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-garden">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header" data-header data-logo-swap data-logo-swap-mode="garden">
+    <div class="header__bar">
+      <a class="header__logo" href="index.html#inicio" aria-label="SA Jardinería — Inicio">
+        <img class="header__logo-img" src="logo-blanco.png" width="180" height="48" alt="" decoding="async" />
+      </a>
+
+      <nav class="header__nav" id="site-nav" aria-label="Secciones principales">
+        <div class="header__nav-pill">
+          <ul class="header__links">
+            <li><a href="index.html#experiencia" data-nav-link>Experiencia</a></li>
+            <li><a href="index.html#quienes-somos" data-nav-link>Nosotros</a></li>
+            <li class="nav-dd is-nav-active" data-nav-dropdown>
+              <button
+                type="button"
+                class="nav-dd__trigger"
+                id="nav-garden-btn"
+                aria-expanded="false"
+                aria-controls="nav-garden-menu"
+                aria-haspopup="true"
+                data-nav-garden-trigger
+                aria-current="page"
+              >
+                Garden
+                <svg class="nav-dd__chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <div class="nav-dd__panel" id="nav-garden-menu" role="menu" aria-labelledby="nav-garden-btn">
+                <a href="garden.html#garden-intro" class="nav-dd__all" role="menuitem">Ver todo Garden</a>
+                <div class="nav-dd__grid" role="none">
+                  <a href="garden.html#garden-temporada" class="nav-dd__item" role="menuitem"><span data-lucide="sun" class="nav-dd__ico" aria-hidden="true"></span><span>Plantas de temporada</span></a>
+                  <a href="garden.html#garden-autoctonas" class="nav-dd__item" role="menuitem"><span data-lucide="map-pin" class="nav-dd__ico" aria-hidden="true"></span><span>Autóctonas · Baleares</span></a>
+                  <a href="cactuario.html" class="nav-dd__item" role="menuitem"><span data-lucide="shrub" class="nav-dd__ico" aria-hidden="true"></span><span>Cactuario</span></a>
+                  <a href="garden.html#garden-bonsais" class="nav-dd__item" role="menuitem"><span data-lucide="tree-deciduous" class="nav-dd__ico" aria-hidden="true"></span><span>Bonsáis</span></a>
+                  <a href="garden.html#garden-orquideario" class="nav-dd__item" role="menuitem"><span data-lucide="flower-2" class="nav-dd__ico" aria-hidden="true"></span><span>Orquideario</span></a>
+                  <a href="garden.html#garden-interior" class="nav-dd__item" role="menuitem"><span data-lucide="home" class="nav-dd__ico" aria-hidden="true"></span><span>Plantas de interior</span></a>
+                  <a href="garden.html#garden-macetas" class="nav-dd__item" role="menuitem"><span data-lucide="package" class="nav-dd__ico" aria-hidden="true"></span><span>Macetas</span></a>
+                  <a href="garden.html#garden-antiguedades" class="nav-dd__item" role="menuitem"><span data-lucide="landmark" class="nav-dd__ico" aria-hidden="true"></span><span>Antigüedades</span></a>
+                </div>
+              </div>
+            </li>
+            <li><a href="tienda.html" data-nav-link>Tienda</a></li>
+            <li><a href="index.html#eventos" data-nav-link>Eventos</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__cta" href="contacto.html" data-nav-contact>Cómo llegar</a>
+        <button
+          type="button"
+          class="header__menu-btn"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-panel"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="header__menu-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <div class="mobile-panel__backdrop" id="mobile-backdrop" tabindex="-1"></div>
+    <div class="mobile-panel__sheet" role="dialog" aria-modal="true" aria-label="Menú">
+      <div class="mobile-panel__head">
+        <span class="mobile-panel__title">Menú</span>
+        <button type="button" class="mobile-panel__close" id="mobile-close" aria-label="Cerrar menú">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <nav class="mobile-panel__nav" aria-label="Móvil">
+        <a href="index.html#experiencia">Experiencia</a>
+        <a href="index.html#quienes-somos">Nosotros</a>
+        <details class="mobile-panel__details" open>
+          <summary class="mobile-panel__summary">Garden</summary>
+          <div class="mobile-panel__sub">
+            <a href="garden.html#garden-intro"><span data-lucide="layout-grid" class="mobile-panel__ico" aria-hidden="true"></span> Todo Garden</a>
+            <a href="garden.html#garden-temporada"><span data-lucide="sun" class="mobile-panel__ico" aria-hidden="true"></span> Plantas de temporada</a>
+            <a href="garden.html#garden-autoctonas"><span data-lucide="map-pin" class="mobile-panel__ico" aria-hidden="true"></span> Autóctonas · Baleares</a>
+            <a href="cactuario.html"><span data-lucide="shrub" class="mobile-panel__ico" aria-hidden="true"></span> Cactuario</a>
+            <a href="garden.html#garden-bonsais"><span data-lucide="tree-deciduous" class="mobile-panel__ico" aria-hidden="true"></span> Bonsáis</a>
+            <a href="garden.html#garden-orquideario"><span data-lucide="flower-2" class="mobile-panel__ico" aria-hidden="true"></span> Orquideario</a>
+            <a href="garden.html#garden-interior"><span data-lucide="home" class="mobile-panel__ico" aria-hidden="true"></span> Plantas de interior</a>
+            <a href="garden.html#garden-macetas"><span data-lucide="package" class="mobile-panel__ico" aria-hidden="true"></span> Macetas</a>
+            <a href="garden.html#garden-antiguedades"><span data-lucide="landmark" class="mobile-panel__ico" aria-hidden="true"></span> Antigüedades</a>
+          </div>
+        </details>
+        <a href="tienda.html">Tienda</a>
+        <a href="index.html#eventos">Eventos</a>
+        <a class="mobile-panel__cta" href="contacto.html">Cómo llegar</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Hero categoría (hub Garden) -->
+    <section class="cat-hero" aria-labelledby="garden-hero-title">
+      <div class="cat-hero__grid">
+        <div class="cat-hero__content">
+          <div class="container cat-hero__content-inner">
+            <nav class="cat-hero__crumb" aria-label="Miga de pan">
+              <a href="index.html">Inicio</a>
+              <span class="cat-hero__crumb-sep" aria-hidden="true">/</span>
+              <span aria-current="page">Garden</span>
+            </nav>
+            <p class="section__eyebrow">Garden · Valldemossa</p>
+            <h1 id="garden-hero-title" class="cat-hero__title">Ocho mundos vegetales para elegir sin prisa</h1>
+            <p class="cat-hero__lead">
+              Plantas, texturas, piezas y rincones pensados para inspirarte en persona. En SA Jardinería cada visita empieza con una vuelta tranquila y una buena pregunta.
+            </p>
+            <div class="cat-hero__actions">
+              <a class="btn btn--primary" href="#garden-intro">Explorar Garden</a>
+              <a class="btn btn--secondary" href="contacto.html">Cómo llegar</a>
+            </div>
+            <nav class="cat-hero__areas" aria-label="Áreas del Garden">
+              <a class="cat-hero__area" href="#garden-temporada">Temporada</a>
+              <a class="cat-hero__area" href="#garden-autoctonas">Autóctonas</a>
+              <a class="cat-hero__area" href="cactuario.html">Cactuario</a>
+              <a class="cat-hero__area" href="#garden-bonsais">Bonsáis</a>
+              <a class="cat-hero__area" href="#garden-orquideario">Orquídeas</a>
+              <a class="cat-hero__area" href="#garden-interior">Interior</a>
+              <a class="cat-hero__area" href="#garden-macetas">Macetas</a>
+              <a class="cat-hero__area" href="#garden-antiguedades">Antigüedades</a>
+            </nav>
+          </div>
+        </div>
+        <div class="cat-hero__visual">
+          <figure class="cat-hero__figure cat-hero__figure--main">
+            <img
+              src="assets/sendero-vegetacion.jpg"
+              alt="Sendero entre vegetación en el Garden de SA Jardinería"
+              width="900"
+              height="1100"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </figure>
+          <figure class="cat-hero__figure cat-hero__figure--accent" aria-hidden="true">
+            <img
+              src="assets/semillero.jpg"
+              alt=""
+              width="480"
+              height="360"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro / manifiesto -->
+    <section class="section garden-intro" id="garden-intro" aria-labelledby="garden-intro-title">
+      <div class="container">
+        <div class="garden-intro__grid">
+          <div class="garden-intro__text" data-reveal>
+            <p class="section__eyebrow">La experiencia Garden</p>
+            <h2 id="garden-intro-title" class="section__title section__title--lg">Más que una selección de plantas</h2>
+            <p class="section__lead">
+              Nuestro Garden está organizado para que puedas comparar, preguntar y descubrir. No trabajamos como un catálogo infinito: preferimos una selección viva, cambiante y acompañada por criterio profesional.
+            </p>
+            <ul class="garden-intro__pills" aria-label="Valores de la experiencia Garden">
+              <li>Selección de temporada</li>
+              <li>Consejo presencial</li>
+              <li>Especies para clima mediterráneo</li>
+              <li>Rincones especializados</li>
+              <li>Sin venta online</li>
+            </ul>
+          </div>
+          <aside class="garden-note-card" data-reveal>
+            <p>Ven con una idea, una foto de tu espacio o simplemente con ganas de pasear. Te ayudamos a encontrar lo que encaja.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navegación interna de áreas -->
+    <nav class="garden-nav" aria-label="Áreas del Garden">
+      <div class="container">
+        <ul class="garden-nav__grid">
+          <li>
+            <a class="garden-nav__item" href="#garden-temporada">
+              <span data-lucide="sun" class="garden-nav__ico" aria-hidden="true"></span>
+              <span>Plantas de temporada</span>
+            </a>
+          </li>
+          <li>
+            <a class="garden-nav__item" href="#garden-autoctonas">
+              <span data-lucide="map-pin" class="garden-nav__ico" aria-hidden="true"></span>
+              <span>Autóctonas · Baleares</span>
+            </a>
+          </li>
+          <li>
+            <a class="garden-nav__item" href="cactuario.html">
+              <span data-lucide="shrub" class="garden-nav__ico" aria-hidden="true"></span>
+              <span>Cactuario</span>
+            </a>
+          </li>
+          <li>
+            <a class="garden-nav__item" href="#garden-bonsais">
+              <span data-lucide="tree-deciduous" class="garden-nav__ico" aria-hidden="true"></span>
+              <span>Bonsáis</span>
+            </a>
+          </li>
+          <li>
+            <a class="garden-nav__item" href="#garden-orquideario">
+              <span data-lucide="flower-2" class="garden-nav__ico" aria-hidden="true"></span>
+              <span>Orquideario</span>
+            </a>
+          </li>
+          <li>
+            <a class="garden-nav__item" href="#garden-interior">
+              <span data-lucide="home" class="garden-nav__ico" aria-hidden="true"></span>
+              <span>Interior</span>
+            </a>
+          </li>
+          <li>
+            <a class="garden-nav__item" href="#garden-macetas">
+              <span data-lucide="package" class="garden-nav__ico" aria-hidden="true"></span>
+              <span>Macetas</span>
+            </a>
+          </li>
+          <li>
+            <a class="garden-nav__item" href="#garden-antiguedades">
+              <span data-lucide="landmark" class="garden-nav__ico" aria-hidden="true"></span>
+              <span>Antigüedades</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Áreas detalladas -->
+    <div class="garden-areas">
+      <section class="section garden-area" id="garden-temporada" aria-labelledby="area-temporada-title">
+        <div class="container">
+          <div class="garden-area__grid" data-reveal>
+            <figure class="garden-area__media">
+              <img
+                src="assets/semillero.jpg"
+                alt="Semillero con plántulas y plantas de temporada"
+                width="900"
+                height="680"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="garden-area__body">
+              <p class="section__eyebrow">Ritmo de estación</p>
+              <h2 id="area-temporada-title" class="section__title">Plantas de temporada</h2>
+              <p>Color, floración y variedad que cambian con el calendario. Una selección viva para renovar terrazas, entradas, balcones y jardines siguiendo el pulso de cada época del año.</p>
+              <h3 class="garden-area__list-title">Qué encontrarás</h3>
+              <ul class="garden-area__list">
+                <li>Flor de temporada</li>
+                <li>Plantas para exterior</li>
+                <li>Composiciones para renovar espacios</li>
+                <li>Ideas para regalar</li>
+              </ul>
+              <p class="garden-area__tip"><strong>Consejo:</strong> Pregunta en tienda qué variedades están mejor en ese momento: la temporada se elige mejor viéndola.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section garden-area garden-area--alt garden-area--reverse" id="garden-autoctonas" aria-labelledby="area-autoctonas-title">
+        <div class="container">
+          <div class="garden-area__grid" data-reveal>
+            <figure class="garden-area__media">
+              <img
+                src="assets/sendero-vegetacion.jpg"
+                alt="Sendero entre vegetación mediterránea autóctona"
+                width="900"
+                height="680"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="garden-area__body">
+              <p class="section__eyebrow">Paisaje local</p>
+              <h2 id="area-autoctonas-title" class="section__title">Autóctonas · Baleares</h2>
+              <p>Especies que dialogan con el clima, la luz y el terreno de la isla. Plantas con carácter mediterráneo para proyectos que buscan naturalidad, resistencia y coherencia con el entorno.</p>
+              <h3 class="garden-area__list-title">Qué encontrarás</h3>
+              <ul class="garden-area__list">
+                <li>Plantas adaptadas al clima balear</li>
+                <li>Opciones para jardines mediterráneos</li>
+                <li>Selección resistente y de bajo mantenimiento</li>
+                <li>Orientación según exposición y suelo</li>
+              </ul>
+              <p class="garden-area__tip"><strong>Consejo:</strong> Una planta bien elegida para su entorno necesita menos esfuerzo y envejece mejor.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section garden-area" id="garden-cactuario" aria-labelledby="area-cactuario-title">
+        <div class="container">
+          <div class="garden-area__grid" data-reveal>
+            <figure class="garden-area__media">
+              <img
+                src="assets/cactuario.jpg"
+                alt="Cactus y suculentas en el cactuario"
+                width="900"
+                height="680"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="garden-area__body">
+              <p class="section__eyebrow">Sol y geometría</p>
+              <h2 id="area-cactuario-title" class="section__title">Cactuario</h2>
+              <p>Formas escultóricas, texturas minerales y especies que convierten la sequedad en belleza. Un rincón pensado para amantes de cactus, suculentas y composiciones de bajo consumo hídrico.</p>
+              <h3 class="garden-area__list-title">Qué encontrarás</h3>
+              <ul class="garden-area__list">
+                <li>Cactus y suculentas</li>
+                <li>Piezas especiales</li>
+                <li>Ideas para maceta y exterior seco</li>
+                <li>Consejos de riego y exposición</li>
+              </ul>
+              <p class="garden-area__tip"><strong>Consejo:</strong> En cactus y suculentas, el exceso de cuidado suele ser peor que la falta de cuidado.</p>
+              <p class="garden-area__more"><a class="btn btn--secondary" href="cactuario.html">Ver Cactuario</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section garden-area garden-area--alt garden-area--reverse" id="garden-bonsais" aria-labelledby="area-bonsais-title">
+        <div class="container">
+          <div class="garden-area__grid" data-reveal>
+            <figure class="garden-area__media">
+              <img
+                src="assets/bonsais.jpg"
+                alt="Bonsáis cuidadosamente dispuestos"
+                width="900"
+                height="680"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="garden-area__body">
+              <p class="section__eyebrow">Arte vivo</p>
+              <h2 id="area-bonsais-title" class="section__title">Bonsáis</h2>
+              <p>Pequeños paisajes que piden observación, paciencia y técnica. Seleccionamos bonsáis y complementos para quienes empiezan y para quienes ya disfrutan cuidando cada detalle.</p>
+              <h3 class="garden-area__list-title">Qué encontrarás</h3>
+              <ul class="garden-area__list">
+                <li>Bonsáis para distintos niveles</li>
+                <li>Orientación de ubicación y riego</li>
+                <li>Complementos básicos de cuidado</li>
+                <li>Consejo presencial</li>
+              </ul>
+              <p class="garden-area__tip"><strong>Consejo:</strong> Un bonsái no se compra solo por su forma: también por el compromiso de luz, agua y tiempo que necesita.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section garden-area" id="garden-orquideario" aria-labelledby="area-orquideario-title">
+        <div class="container">
+          <div class="garden-area__grid" data-reveal>
+            <figure class="garden-area__media">
+              <img
+                src="assets/orquideario.jpg"
+                alt="Orquídeas en el orquideario"
+                width="900"
+                height="680"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="garden-area__body">
+              <p class="section__eyebrow">Elegancia y matiz</p>
+              <h2 id="area-orquideario-title" class="section__title">Orquideario</h2>
+              <p>Flores precisas, raíces visibles y una belleza que recompensa la constancia. Nuestro orquideario reúne variedades para regalar, decorar o aprender a cuidar con más seguridad.</p>
+              <h3 class="garden-area__list-title">Qué encontrarás</h3>
+              <ul class="garden-area__list">
+                <li>Orquídeas seleccionadas</li>
+                <li>Consejos de luz y humedad</li>
+                <li>Ideas para interior luminoso</li>
+                <li>Complementos de cuidado</li>
+              </ul>
+              <p class="garden-area__tip"><strong>Consejo:</strong> La clave está en observar raíces, luz y humedad antes de cambiar rutinas de riego.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section garden-area garden-area--alt garden-area--reverse" id="garden-interior" aria-labelledby="area-interior-title">
+        <div class="container">
+          <div class="garden-area__grid" data-reveal>
+            <figure class="garden-area__media">
+              <img
+                src="assets/interior.jpg"
+                alt="Plantas de interior con follaje tropical"
+                width="900"
+                height="680"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="garden-area__body">
+              <p class="section__eyebrow">Verde en casa</p>
+              <h2 id="area-interior-title" class="section__title">Plantas de interior</h2>
+              <p>Follajes, volúmenes y texturas para hogares, oficinas y espacios cubiertos. Te ayudamos a elegir según luz, tamaño, mantenimiento y estilo del ambiente.</p>
+              <h3 class="garden-area__list-title">Qué encontrarás</h3>
+              <ul class="garden-area__list">
+                <li>Follaje tropical</li>
+                <li>Plantas para luz media</li>
+                <li>Opciones fáciles de cuidar</li>
+                <li>Combinaciones con maceta</li>
+              </ul>
+              <p class="garden-area__tip"><strong>Consejo:</strong> Traer una foto del espacio ayuda mucho: la luz real manda más que cualquier tendencia.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section garden-area" id="garden-macetas" aria-labelledby="area-macetas-title">
+        <div class="container">
+          <div class="garden-area__grid" data-reveal>
+            <figure class="garden-area__media">
+              <img
+                src="assets/interior-plantas-maceta.jpg"
+                alt="Plantas de interior en macetas decorativas"
+                width="900"
+                height="680"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="garden-area__body">
+              <p class="section__eyebrow">La pieza que acompaña</p>
+              <h2 id="area-macetas-title" class="section__title">Macetas</h2>
+              <p>La maceta cambia la presencia de una planta. Trabajamos piezas para interior y exterior, buscando proporción, textura y coherencia con cada espacio.</p>
+              <h3 class="garden-area__list-title">Qué encontrarás</h3>
+              <ul class="garden-area__list">
+                <li>Macetas decorativas</li>
+                <li>Cerámica y piezas naturales</li>
+                <li>Opciones para interior y exterior</li>
+                <li>Asesoramiento de tamaño y drenaje</li>
+              </ul>
+              <p class="garden-area__tip"><strong>Consejo:</strong> Una buena maceta no solo decora: también ayuda a que la planta viva mejor.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section garden-area garden-area--alt garden-area--reverse" id="garden-antiguedades" aria-labelledby="area-antiguedades-title">
+        <div class="container">
+          <div class="garden-area__grid" data-reveal>
+            <figure class="garden-area__media">
+              <img
+                src="assets/antiguedades.jpg"
+                alt="Piezas de antigüedades decorativas para jardín"
+                width="900"
+                height="680"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="garden-area__body">
+              <p class="section__eyebrow">Objetos con alma</p>
+              <h2 id="area-antiguedades-title" class="section__title">Antigüedades</h2>
+              <p>Piezas singulares para añadir memoria, textura y carácter a jardines, patios e interiores. Objetos que no buscan parecer nuevos, sino pertenecer al lugar.</p>
+              <h3 class="garden-area__list-title">Qué encontrarás</h3>
+              <ul class="garden-area__list">
+                <li>Piezas decorativas con historia</li>
+                <li>Objetos para jardín y hogar</li>
+                <li>Texturas envejecidas</li>
+                <li>Selección cambiante</li>
+              </ul>
+              <p class="garden-area__tip"><strong>Consejo:</strong> Las antigüedades funcionan mejor cuando no compiten con el verde, sino que lo acompañan.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Cómo elegir -->
+    <section class="section garden-guide" aria-labelledby="garden-guide-title">
+      <div class="container">
+        <header class="garden-guide__head" data-reveal>
+          <h2 id="garden-guide-title" class="section__title section__title--lg">Cómo elegir mejor en Garden</h2>
+          <p class="garden-guide__intro">
+            No hace falta venir con todo decidido. A veces basta con saber dónde irá la planta, cuánta luz recibe y cuánto tiempo quieres dedicarle.
+          </p>
+        </header>
+        <div class="garden-guide__grid">
+          <article class="garden-guide__card" data-reveal>
+            <span class="garden-guide__step" aria-hidden="true">01</span>
+            <h3>Observa la luz</h3>
+            <p>Interior, exterior, sol directo o sombra cambian por completo la elección.</p>
+          </article>
+          <article class="garden-guide__card" data-reveal>
+            <span class="garden-guide__step" aria-hidden="true">02</span>
+            <h3>Piensa en el ritmo</h3>
+            <p>Hay plantas agradecidas y otras que piden más atención. Elegir bien evita frustraciones.</p>
+          </article>
+          <article class="garden-guide__card" data-reveal>
+            <span class="garden-guide__step" aria-hidden="true">03</span>
+            <h3>Mide el espacio</h3>
+            <p>Altura, volumen y maceta importan tanto como la especie.</p>
+          </article>
+          <article class="garden-guide__card" data-reveal>
+            <span class="garden-guide__step" aria-hidden="true">04</span>
+            <h3>Pregunta</h3>
+            <p>El consejo presencial es parte de la experiencia Garden.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería mosaico -->
+    <section class="section garden-mosaic" aria-labelledby="garden-mosaic-title">
+      <div class="container">
+        <header class="garden-mosaic__head" data-reveal>
+          <h2 id="garden-mosaic-title" class="section__title section__title--lg">Rincones que cambian con la estación</h2>
+          <p class="section__intro">El Garden está vivo: algunas piezas permanecen, otras llegan y se van. Por eso merece la pena volver.</p>
+        </header>
+        <div class="garden-mosaic__grid">
+          <figure class="garden-mosaic__item garden-mosaic__item--tall" data-reveal>
+            <img src="assets/cactuario.jpg" alt="Detalle del cactuario con formas escultóricas" width="600" height="800" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="garden-mosaic__item" data-reveal>
+            <img src="assets/bonsais.jpg" alt="Bonsáis en exposición" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="garden-mosaic__item" data-reveal>
+            <img src="assets/orquideario.jpg" alt="Orquídeas en flor" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="garden-mosaic__item garden-mosaic__item--wide" data-reveal>
+            <img src="assets/interior.jpg" alt="Rincón de plantas de interior" width="900" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="garden-mosaic__item" data-reveal>
+            <img src="assets/semillero.jpg" alt="Semillero con plántulas de temporada" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="garden-mosaic__item" data-reveal>
+            <img src="assets/antiguedades.jpg" alt="Piezas de antigüedades junto al verde" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="garden-final-cta" aria-labelledby="garden-cta-title">
+      <div class="container garden-final-cta__inner" data-reveal>
+        <p class="section__eyebrow section__eyebrow--on-dark">Visita presencial</p>
+        <h2 id="garden-cta-title" class="section__title section__title--lg">Ven a recorrer el Garden</h2>
+        <p class="garden-final-cta__text">
+          Estamos en la carretera de Valldemossa, en un entorno pensado para mirar, comparar y elegir con calma.
+        </p>
+        <div class="garden-final-cta__actions">
+          <a class="btn btn--primary" href="contacto.html">Cómo llegar</a>
+          <a class="btn btn--secondary btn--on-dark" href="index.html#inicio">Volver al inicio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__wrap">
+      <div class="footer__top">
+        <a class="footer__brand" href="index.html#inicio" aria-label="SA Jardinería — Inicio">
+          <img class="footer__logo-img" src="logo-blanco.png" width="160" height="42" alt="" decoding="async" />
+        </a>
+        <nav class="footer__nav" aria-label="Enlaces adicionales">
+          <a href="index.html#galeria">Galería</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+      <p class="footer__copy">
+        © <span id="year"></span> SA Jardinería · Carr. de Valldemossa, KM 9,3 · Illes Balears ·
+        <a href="index.html#inicio">Inicio</a>
+      </p>
+      <p class="footer__legal">Sitio informativo. Sin venta online. Datos de contacto presencial en tienda.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

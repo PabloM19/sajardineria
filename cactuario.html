@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descubre el Cactuario de SA Jardinería en Valldemossa: cactus, suculentas, formas escultóricas y asesoramiento presencial para elegir especies adaptadas al clima mediterráneo." />
+  <meta name="theme-color" content="#3A332F" />
+  <title>Cactuario | SA Jardinería · Mallorca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/cactuario.jpg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-category">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header" data-header>
+    <div class="header__bar">
+      <a class="header__logo" href="index.html#inicio" aria-label="SA Jardinería — Inicio">
+        <img class="header__logo-img" src="logo.png" width="180" height="48" alt="" decoding="async" />
+      </a>
+
+      <nav class="header__nav" id="site-nav" aria-label="Secciones principales">
+        <div class="header__nav-pill">
+          <ul class="header__links">
+            <li><a href="index.html#experiencia" data-nav-link>Experiencia</a></li>
+            <li><a href="index.html#quienes-somos" data-nav-link>Nosotros</a></li>
+            <li class="nav-dd is-nav-active" data-nav-dropdown>
+              <button
+                type="button"
+                class="nav-dd__trigger"
+                id="nav-garden-btn"
+                aria-expanded="false"
+                aria-controls="nav-garden-menu"
+                aria-haspopup="true"
+                data-nav-garden-trigger
+                aria-current="page"
+              >
+                Garden
+                <svg class="nav-dd__chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <div class="nav-dd__panel" id="nav-garden-menu" role="menu" aria-labelledby="nav-garden-btn">
+                <a href="garden.html#garden-intro" class="nav-dd__all" role="menuitem">Ver todo Garden</a>
+                <div class="nav-dd__grid" role="none">
+                  <a href="garden.html#garden-temporada" class="nav-dd__item" role="menuitem"><span data-lucide="sun" class="nav-dd__ico" aria-hidden="true"></span><span>Plantas de temporada</span></a>
+                  <a href="garden.html#garden-autoctonas" class="nav-dd__item" role="menuitem"><span data-lucide="map-pin" class="nav-dd__ico" aria-hidden="true"></span><span>Autóctonas · Baleares</span></a>
+                  <a href="cactuario.html" class="nav-dd__item" role="menuitem"><span data-lucide="shrub" class="nav-dd__ico" aria-hidden="true"></span><span>Cactuario</span></a>
+                  <a href="garden.html#garden-bonsais" class="nav-dd__item" role="menuitem"><span data-lucide="tree-deciduous" class="nav-dd__ico" aria-hidden="true"></span><span>Bonsáis</span></a>
+                  <a href="garden.html#garden-orquideario" class="nav-dd__item" role="menuitem"><span data-lucide="flower-2" class="nav-dd__ico" aria-hidden="true"></span><span>Orquideario</span></a>
+                  <a href="garden.html#garden-interior" class="nav-dd__item" role="menuitem"><span data-lucide="home" class="nav-dd__ico" aria-hidden="true"></span><span>Plantas de interior</span></a>
+                  <a href="garden.html#garden-macetas" class="nav-dd__item" role="menuitem"><span data-lucide="package" class="nav-dd__ico" aria-hidden="true"></span><span>Macetas</span></a>
+                  <a href="garden.html#garden-antiguedades" class="nav-dd__item" role="menuitem"><span data-lucide="landmark" class="nav-dd__ico" aria-hidden="true"></span><span>Antigüedades</span></a>
+                </div>
+              </div>
+            </li>
+            <li><a href="tienda.html" data-nav-link>Tienda</a></li>
+            <li><a href="index.html#eventos" data-nav-link>Eventos</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__cta" href="contacto.html" data-nav-contact>Cómo llegar</a>
+        <button
+          type="button"
+          class="header__menu-btn"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-panel"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="header__menu-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <div class="mobile-panel__backdrop" id="mobile-backdrop" tabindex="-1"></div>
+    <div class="mobile-panel__sheet" role="dialog" aria-modal="true" aria-label="Menú">
+      <div class="mobile-panel__head">
+        <span class="mobile-panel__title">Menú</span>
+        <button type="button" class="mobile-panel__close" id="mobile-close" aria-label="Cerrar menú">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <nav class="mobile-panel__nav" aria-label="Móvil">
+        <a href="index.html#experiencia">Experiencia</a>
+        <a href="index.html#quienes-somos">Nosotros</a>
+        <details class="mobile-panel__details" open>
+          <summary class="mobile-panel__summary">Garden</summary>
+          <div class="mobile-panel__sub">
+            <a href="garden.html#garden-intro"><span data-lucide="layout-grid" class="mobile-panel__ico" aria-hidden="true"></span> Todo Garden</a>
+            <a href="garden.html#garden-temporada"><span data-lucide="sun" class="mobile-panel__ico" aria-hidden="true"></span> Plantas de temporada</a>
+            <a href="garden.html#garden-autoctonas"><span data-lucide="map-pin" class="mobile-panel__ico" aria-hidden="true"></span> Autóctonas · Baleares</a>
+            <a href="cactuario.html"><span data-lucide="shrub" class="mobile-panel__ico" aria-hidden="true"></span> Cactuario</a>
+            <a href="garden.html#garden-bonsais"><span data-lucide="tree-deciduous" class="mobile-panel__ico" aria-hidden="true"></span> Bonsáis</a>
+            <a href="garden.html#garden-orquideario"><span data-lucide="flower-2" class="mobile-panel__ico" aria-hidden="true"></span> Orquideario</a>
+            <a href="garden.html#garden-interior"><span data-lucide="home" class="mobile-panel__ico" aria-hidden="true"></span> Plantas de interior</a>
+            <a href="garden.html#garden-macetas"><span data-lucide="package" class="mobile-panel__ico" aria-hidden="true"></span> Macetas</a>
+            <a href="garden.html#garden-antiguedades"><span data-lucide="landmark" class="mobile-panel__ico" aria-hidden="true"></span> Antigüedades</a>
+          </div>
+        </details>
+        <a href="tienda.html">Tienda</a>
+        <a href="index.html#eventos">Eventos</a>
+        <a class="mobile-panel__cta" href="contacto.html">Cómo llegar</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Hero subcategoría -->
+    <section class="subcat-hero" aria-labelledby="cactuario-hero-title">
+      <div class="subcat-hero__media" aria-hidden="true">
+        <img
+          src="assets/cactuario.jpg"
+          alt=""
+          width="1600"
+          height="900"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="subcat-hero__veil" aria-hidden="true"></div>
+      <div class="container subcat-hero__shell">
+        <div class="subcat-hero__meta">
+          <nav class="subcat-hero__crumb" aria-label="Miga de pan">
+            <a href="garden.html">Garden</a>
+            <span class="subcat-hero__crumb-sep" aria-hidden="true">/</span>
+            <span aria-current="page">Cactuario</span>
+          </nav>
+          <a class="subcat-hero__back" href="garden.html#garden-cactuario">
+            <span data-lucide="arrow-left" class="subcat-hero__back-ico" aria-hidden="true"></span>
+            Volver al Garden
+          </a>
+        </div>
+        <div class="subcat-hero__body">
+          <p class="section__eyebrow section__eyebrow--on-dark">Rincón especializado</p>
+          <h1 id="cactuario-hero-title" class="subcat-hero__title">Formas escultóricas para vivir el sol con calma</h1>
+          <p class="subcat-hero__lead">
+            Cactus y suculentas seleccionados por su carácter, textura y capacidad de adaptarse a espacios luminosos. Un rincón para descubrir especies resistentes, composiciones minerales y consejos de cuidado presencial.
+          </p>
+          <div class="subcat-hero__actions">
+            <a class="btn btn--primary" href="#cactuario-intro">Explorar el Cactuario</a>
+            <a class="btn btn--secondary btn--on-dark" href="contacto.html">Cómo llegar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section category-intro" id="cactuario-intro" aria-labelledby="cactuario-intro-title">
+      <div class="container">
+        <div class="category-intro__grid">
+          <div class="category-intro__text" data-reveal>
+            <p class="section__eyebrow">Sol, textura y resistencia</p>
+            <h2 id="cactuario-intro-title" class="section__title section__title--lg">Un rincón pensado para mirar de cerca</h2>
+            <p class="section__lead">
+              El Cactuario reúne plantas que convierten la sequedad en belleza. Espinas, geometrías, reservas de agua y floraciones inesperadas conviven en una selección que cambia con la temporada y se entiende mejor en persona.
+            </p>
+            <p>
+              Te ayudamos a elegir según exposición, tamaño, tipo de maceta y nivel de mantenimiento. Porque incluso las plantas más resistentes necesitan estar en el lugar adecuado.
+            </p>
+          </div>
+          <aside class="category-note" data-reveal>
+            <p>Ven con una foto de tu terraza, balcón o rincón luminoso. Con la orientación adecuada, un cactus o una suculenta pueden transformar un espacio sin exigir grandes cuidados.</p>
+            <ul class="category-pill-list" aria-label="Características del Cactuario">
+              <li>Sol directo</li>
+              <li>Bajo riego</li>
+              <li>Maceta</li>
+              <li>Exterior</li>
+              <li>Interior luminoso</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Métricas sensoriales -->
+    <section class="category-strip" aria-label="El Cactuario en pocas palabras">
+      <div class="container category-strip__grid">
+        <div class="category-strip__item" data-reveal>
+          <span class="category-strip__value">Sol</span>
+          <span class="category-strip__label">exposición y orientación como punto de partida</span>
+        </div>
+        <div class="category-strip__item" data-reveal>
+          <span class="category-strip__value">Textura</span>
+          <span class="category-strip__label">espinas, ceras, hojas carnosas y siluetas</span>
+        </div>
+        <div class="category-strip__item" data-reveal>
+          <span class="category-strip__value">Paciencia</span>
+          <span class="category-strip__label">crecimiento lento, floración que sorprende</span>
+        </div>
+        <div class="category-strip__item" data-reveal>
+          <span class="category-strip__value">Consejo</span>
+          <span class="category-strip__label">100 % presencial, sin catálogo online</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qué encontrarás -->
+    <section class="section category-features" aria-labelledby="cactuario-features-title">
+      <div class="container">
+        <header class="category-features__head" data-reveal>
+          <h2 id="cactuario-features-title" class="section__title section__title--lg">Qué encontrarás en el Cactuario</h2>
+          <p class="section__intro">No es una colección cerrada: es una selección viva que cambia según la temporada, la disponibilidad y el criterio del equipo.</p>
+        </header>
+        <div class="category-feature-grid">
+          <article class="category-feature-card" data-reveal>
+            <span data-lucide="sun" class="category-feature-card__ico" aria-hidden="true"></span>
+            <h3>Cactus</h3>
+            <p>Especies de formas marcadas, crecimiento pausado y gran presencia visual. Ideales para espacios luminosos y composiciones de carácter mineral.</p>
+          </article>
+          <article class="category-feature-card" data-reveal>
+            <span data-lucide="flower-2" class="category-feature-card__ico" aria-hidden="true"></span>
+            <h3>Suculentas</h3>
+            <p>Variedades de hojas carnosas, colores suaves y siluetas compactas. Perfectas para macetas, centros y rincones donde la textura importa.</p>
+          </article>
+          <article class="category-feature-card" data-reveal>
+            <span data-lucide="sparkles" class="category-feature-card__ico" aria-hidden="true"></span>
+            <h3>Piezas especiales</h3>
+            <p>Ejemplares singulares para quienes buscan una planta con presencia escultórica, proporción y personalidad propia.</p>
+          </article>
+          <article class="category-feature-card" data-reveal>
+            <span data-lucide="layers" class="category-feature-card__ico" aria-hidden="true"></span>
+            <h3>Composiciones</h3>
+            <p>Ideas para combinar plantas, áridos, recipientes y alturas, creando escenas de bajo consumo hídrico con aspecto natural.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tipos y familias -->
+    <section class="section category-types" id="cactuario-tipos" aria-labelledby="cactuario-types-title">
+      <div class="container">
+        <header class="category-types__head" data-reveal>
+          <p class="section__eyebrow">Familias y formas</p>
+          <h2 id="cactuario-types-title" class="section__title section__title--lg">Tipos que conviven en el Cactuario</h2>
+          <p class="section__intro">No hablamos de un listado fijo: es una muestra viva de siluetas, tamaños y carácteres. Estas familias suelen estar presentes y se eligen mejor comparándolas en tienda.</p>
+        </header>
+        <div class="category-type-grid">
+          <article class="category-type-card" data-reveal>
+            <figure class="category-type-card__media">
+              <img src="assets/cactuario.jpg" alt="Cactus globulares con formas redondas y compactas" width="600" height="420" loading="lazy" decoding="async" style="object-position: 55% 40%;" />
+            </figure>
+            <div class="category-type-card__body">
+              <h3>Cactus globulares</h3>
+              <p>Volúmenes compactos, simetrías redondas y presencia escultórica. Funcionan muy bien en macetas individuales o en grupos de distintas alturas.</p>
+              <ul class="category-type-card__tags">
+                <li>Maceta pequeña</li>
+                <li>Sol directo</li>
+                <li>Exterior</li>
+              </ul>
+            </div>
+          </article>
+          <article class="category-type-card" data-reveal>
+            <figure class="category-type-card__media">
+              <img src="assets/cactuario.jpg" alt="Cactus columnares de perfil alto y vertical" width="600" height="420" loading="lazy" decoding="async" style="object-position: 20% 50%;" />
+            </figure>
+            <div class="category-type-card__body">
+              <h3>Columnares</h3>
+              <p>Perfiles altos que aportan verticalidad a terrazas y entradas. Piden espacio, buena luz y macetas estables por su peso y crecimiento.</p>
+              <ul class="category-type-card__tags">
+                <li>Altura</li>
+                <li>Terraza</li>
+                <li>Proporción</li>
+              </ul>
+            </div>
+          </article>
+          <article class="category-type-card" data-reveal>
+            <figure class="category-type-card__media">
+              <img src="assets/interior-plantas-maceta.jpg" alt="Suculentas en roseta con hojas carnosas" width="600" height="420" loading="lazy" decoding="async" style="object-position: 60% 45%;" />
+            </figure>
+            <div class="category-type-card__body">
+              <h3>Suculentas en roseta</h3>
+              <p>Echeverias, aeoniums y formas similares: geometría suave, colores que cambian con la luz y composiciones muy gráficas en bandejas o macetas bajas.</p>
+              <ul class="category-type-card__tags">
+                <li>Composición</li>
+                <li>Color</li>
+                <li>Balcones</li>
+              </ul>
+            </div>
+          </article>
+          <article class="category-type-card" data-reveal>
+            <figure class="category-type-card__media">
+              <img src="assets/interior-plantas-maceta.jpg" alt="Crasas y suculentas de hoja en maceta decorativa" width="600" height="420" loading="lazy" decoding="async" style="object-position: 35% 55%;" />
+            </figure>
+            <div class="category-type-card__body">
+              <h3>Crasas de hoja</h3>
+              <p>Hojas carnosas, propagación sencilla y aspecto frondoso en miniatura. Ideales para quien empieza y quiere aprender observando el crecimiento.</p>
+              <ul class="category-type-card__tags">
+                <li>Fácil inicio</li>
+                <li>Maceta</li>
+                <li>Interior luminoso</li>
+              </ul>
+            </div>
+          </article>
+          <article class="category-type-card" data-reveal>
+            <figure class="category-type-card__media">
+              <img src="assets/sendero-vegetacion.jpg" alt="Plantas arquitectónicas en entorno mediterráneo seco" width="600" height="420" loading="lazy" decoding="async" style="object-position: 70% 30%;" />
+            </figure>
+            <div class="category-type-card__body">
+              <h3>Formas arquitectónicas</h3>
+              <p>Agaves, yuccas y especies de porte escultórico que dialogan con el paisaje balear. Presencia fuerte, bajo riego y gran impacto en jardines secos.</p>
+              <ul class="category-type-card__tags">
+                <li>Jardín seco</li>
+                <li>Mediterráneo</li>
+                <li>Exterior</li>
+              </ul>
+            </div>
+          </article>
+          <article class="category-type-card" data-reveal>
+            <figure class="category-type-card__media">
+              <img src="assets/regalo-detalle.jpg" alt="Composición de suculentas como detalle decorativo" width="600" height="420" loading="lazy" decoding="async" />
+            </figure>
+            <div class="category-type-card__body">
+              <h3>Composiciones listas</h3>
+              <p>Bandejas, cuencos y escenas ya plantadas para regalar o colocar directamente. Una forma de llevarse una idea completa, no solo una pieza suelta.</p>
+              <ul class="category-type-card__tags">
+                <li>Regalo</li>
+                <li>Detalle</li>
+                <li>Centro de mesa</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial -->
+    <section class="section category-editorial category-editorial--alt" aria-labelledby="cactuario-editorial-title">
+      <div class="container">
+        <div class="category-editorial__grid" data-reveal>
+          <figure class="category-editorial__media">
+            <img
+              src="assets/cactuario.jpg"
+              alt="Detalle de cactus con formas escultóricas"
+              width="900"
+              height="680"
+              loading="lazy"
+              decoding="async"
+              style="object-position: 65% 35%;"
+            />
+          </figure>
+          <div class="category-editorial__body">
+            <p class="section__eyebrow">Belleza de bajo consumo hídrico</p>
+            <h2 id="cactuario-editorial-title" class="section__title section__title--lg">Plantas que enseñan a cuidar de otra manera</h2>
+            <p>El mundo de los cactus y las suculentas invita a observar más y regar menos. Su belleza no está en la abundancia, sino en la forma, la paciencia y la adaptación.</p>
+            <p>Por eso el asesoramiento es importante: elegir bien la exposición, el sustrato, la maceta y el drenaje suele marcar la diferencia entre una planta que sobrevive y una planta que se integra en el espacio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mediterráneo -->
+    <section class="section category-editorial category-editorial--reverse" aria-labelledby="cactuario-mediterraneo-title">
+      <div class="container">
+        <div class="category-editorial__grid" data-reveal>
+          <figure class="category-editorial__media">
+            <img
+              src="assets/sendero-vegetacion.jpg"
+              alt="Rincón vegetal mediterráneo con luz y sequedad natural"
+              width="900"
+              height="680"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div class="category-editorial__body">
+            <p class="section__eyebrow">Clima de la isla</p>
+            <h2 id="cactuario-mediterraneo-title" class="section__title section__title--lg">Plantas que entienden el sol mallorquín</h2>
+            <p>En Valldemossa la luz es intensa, el verano seco y el viento a veces salado. Muchas especies del Cactuario están pensadas para resistir esas condiciones con elegancia, no a pesar de ellas.</p>
+            <p>Por eso insistimos en ver el espacio real: una terraza orientada al sur no se comporta igual que un ventanal norte. El consejo presencial ayuda a traducir el clima mediterráneo a decisiones concretas de especie, maceta y ubicación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floración y ritmo -->
+    <section class="section category-seasons" aria-labelledby="cactuario-seasons-title">
+      <div class="container">
+        <div class="category-seasons__grid">
+          <div class="category-seasons__intro" data-reveal>
+            <p class="section__eyebrow">Calendario vivo</p>
+            <h2 id="cactuario-seasons-title" class="section__title section__title--lg">Floración, reposo y cambio de estación</h2>
+            <p class="section__lead">El Cactuario no se ve igual en primavera que en pleno verano. Algunas piezas florecen con insistencia; otras prefieren el silencio. Conocer ese ritmo evita prisas y malentendidos.</p>
+          </div>
+          <div class="category-seasons__list" data-reveal>
+            <article class="category-seasons__item">
+              <span class="category-seasons__when">Primavera · verano</span>
+              <h3>Crecimiento y flor</h3>
+              <p>Con más horas de luz, muchas especies activan brotes, flores breves y cambios de color. Es buen momento para elegir, trasplantar con criterio y revisar exposición.</p>
+            </article>
+            <article class="category-seasons__item">
+              <span class="category-seasons__when">Otoño</span>
+              <h3>Transición</h3>
+              <p>El riego se ajusta, las hojas pueden intensificar tonos y conviene preparar las plantas para meses más frescos. Pregunta en tienda qué conviene mover o proteger.</p>
+            </article>
+            <article class="category-seasons__item">
+              <span class="category-seasons__when">Invierno</span>
+              <h3>Reposo y observación</h3>
+              <p>Menos agua, más paciencia. Algunas especies descansan; otras piden un rincón más protegido. Observar sin intervenir demasiado suele ser la mejor decisión.</p>
+            </article>
+          </div>
+        </div>
+        <figure class="category-seasons__figure" data-reveal>
+          <img
+            src="assets/cactuario.jpg"
+            alt="Detalle de cactus con texturas y formas que cambian con la estación"
+            width="1200"
+            height="480"
+            loading="lazy"
+            decoding="async"
+            style="object-position: 50% 35%;"
+          />
+          <figcaption>La selección cambia: merece la pena volver y comparar en distintas épocas del año.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Guía rápida -->
+    <section class="section category-guide" aria-labelledby="cactuario-guide-title">
+      <div class="container">
+        <header class="category-guide__head" data-reveal>
+          <h2 id="cactuario-guide-title" class="section__title section__title--lg">Antes de elegir, piensa en esto</h2>
+          <p class="section__intro">Cada especie tiene sus matices, pero estas preguntas ayudan a orientar mejor la elección en tienda.</p>
+        </header>
+        <div class="category-guide__grid">
+          <article class="category-guide__item" data-reveal>
+            <h3>¿Cuánta luz recibe?</h3>
+            <p>La mayoría agradece mucha luz, pero no todas responden igual al sol directo, especialmente en interior o tras un cambio de ubicación.</p>
+          </article>
+          <article class="category-guide__item" data-reveal>
+            <h3>¿Dónde vivirá?</h3>
+            <p>Terraza, balcón, jardín seco o interior luminoso cambian la elección de especie, tamaño y recipiente.</p>
+          </article>
+          <article class="category-guide__item" data-reveal>
+            <h3>¿Cómo drena la maceta?</h3>
+            <p>El drenaje es clave. En cactus y suculentas, el exceso de agua suele ser más problemático que la falta de riego.</p>
+          </article>
+          <article class="category-guide__item" data-reveal>
+            <h3>¿Qué ritmo de cuidado quieres?</h3>
+            <p>Son plantas resistentes, pero no invisibles. Observarlas, girarlas y adaptar el riego ayuda a que mantengan su forma.</p>
+          </article>
+        </div>
+        <p class="category-guide__note" data-reveal>
+          <strong>Consejo SA Jardinería:</strong> no todas las plantas de bajo riego son iguales. Pregunta antes de llevarte una especie si tienes dudas sobre sol, viento, humedad o maceta.
+        </p>
+      </div>
+    </section>
+
+    <!-- Maceta, sustrato y complementos -->
+    <section class="section category-complement" aria-labelledby="cactuario-complement-title">
+      <div class="container">
+        <header class="category-complement__head" data-reveal>
+          <p class="section__eyebrow">Más que la planta</p>
+          <h2 id="cactuario-complement-title" class="section__title section__title--lg">Maceta, sustrato y detalle</h2>
+          <p class="section__intro">Un cactus bien elegido puede ir mal si la maceta no drena o el sustrato retiene demasiada humedad. En SA Jardinería lo vemos como un conjunto, no como piezas sueltas.</p>
+        </header>
+        <div class="category-complement__grid">
+          <article class="category-complement__card" data-reveal>
+            <figure class="category-complement__media">
+              <img src="assets/interior-plantas-maceta.jpg" alt="Macetas decorativas con plantas resistentes" width="600" height="400" loading="lazy" decoding="async" style="object-position: 45% 50%;" />
+            </figure>
+            <div class="category-complement__body">
+              <h3>Macetas con drenaje</h3>
+              <p>Cerámica, terracota, piezas naturales y formatos bajos o altos según la especie. Te orientamos sobre tamaño, peso y proporción antes de decidir.</p>
+            </div>
+          </article>
+          <article class="category-complement__card" data-reveal>
+            <figure class="category-complement__media">
+              <img src="assets/semillero.jpg" alt="Sustratos y materiales para plantas de bajo riego" width="600" height="400" loading="lazy" decoding="async" style="object-position: 50% 60%;" />
+            </figure>
+            <div class="category-complement__body">
+              <h3>Sustratos y áridos</h3>
+              <p>Mezclas drenantes, grava, piedra volcánica y elementos minerales para composiciones secas. El sustrato correcto marca la diferencia en Mallorca.</p>
+            </div>
+          </article>
+          <article class="category-complement__card" data-reveal>
+            <figure class="category-complement__media">
+              <img src="assets/riego-humedad.jpg" alt="Consejo de riego y humedad para cactus y suculentas" width="600" height="400" loading="lazy" decoding="async" />
+            </figure>
+            <div class="category-complement__body">
+              <h3>Riego con criterio</h3>
+              <p>Regaderas, pulverizadores y orientación sobre frecuencia según estación. Menos suele ser más: te explicamos cuándo observar y cuándo actuar.</p>
+            </div>
+          </article>
+        </div>
+        <p class="category-complement__note" data-reveal>
+          También puedes explorar <a href="garden.html#garden-macetas">Macetas en Garden</a> y la <a href="tienda.html">Tienda</a> de complementos — siempre con consejo presencial.
+        </p>
+      </div>
+    </section>
+
+    <!-- Para qué espacios -->
+    <section class="section category-spaces category-spaces--alt" aria-labelledby="cactuario-spaces-title">
+      <div class="container">
+        <header class="category-spaces__head" data-reveal>
+          <h2 id="cactuario-spaces-title" class="section__title section__title--lg">Ideas para integrarlo en tu espacio</h2>
+        </header>
+        <div class="category-spaces__grid">
+          <article class="category-spaces__card category-spaces__card--media" data-reveal>
+            <figure class="category-spaces__media">
+              <img src="assets/sendero-vegetacion.jpg" alt="Terraza mediterránea con plantas resistentes al sol" width="500" height="320" loading="lazy" decoding="async" style="object-position: 60% 40%;" />
+            </figure>
+            <div class="category-spaces__body">
+              <h3>Terrazas soleadas</h3>
+              <p>Cactus y suculentas pueden aportar estructura, volumen y bajo mantenimiento en espacios expuestos al sol.</p>
+            </div>
+          </article>
+          <article class="category-spaces__card category-spaces__card--media" data-reveal>
+            <figure class="category-spaces__media">
+              <img src="assets/interior-plantas-maceta.jpg" alt="Balcones y macetas con suculentas compactas" width="500" height="320" loading="lazy" decoding="async" />
+            </figure>
+            <div class="category-spaces__body">
+              <h3>Balcones y macetas</h3>
+              <p>Las especies compactas funcionan muy bien en composiciones pequeñas, siempre que la luz y el drenaje acompañen.</p>
+            </div>
+          </article>
+          <article class="category-spaces__card category-spaces__card--media" data-reveal>
+            <figure class="category-spaces__media">
+              <img src="assets/interior.jpg" alt="Plantas resistentes en interior luminoso" width="500" height="320" loading="lazy" decoding="async" style="object-position: 50% 55%;" />
+            </figure>
+            <div class="category-spaces__body">
+              <h3>Interiores luminosos</h3>
+              <p>Algunas variedades pueden vivir en interior si reciben claridad suficiente y se evita el exceso de riego.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia de visita -->
+    <section class="category-visit" aria-labelledby="cactuario-visit-title">
+      <div class="category-visit__media" aria-hidden="true">
+        <img src="assets/puertas-abiertas.jpg" alt="" width="1600" height="700" loading="lazy" decoding="async" />
+      </div>
+      <div class="category-visit__veil" aria-hidden="true"></div>
+      <div class="container category-visit__inner" data-reveal>
+        <p class="section__eyebrow section__eyebrow--on-dark">Ver, tocar y preguntar</p>
+        <h2 id="cactuario-visit-title" class="category-visit__title">El Cactuario se entiende caminando</h2>
+        <p class="category-visit__text">Recorrer el rincón con calma permite comparar tamaños, comparar texturas y descubrir piezas que en una foto no se ven igual. Nuestro equipo está cerca para orientar sin prisa.</p>
+        <ul class="category-visit__list">
+          <li>Compara especies en persona</li>
+          <li>Pregunta por exposición y maceta</li>
+          <li>Trae una foto de tu espacio</li>
+          <li>Elige con tiempo y criterio</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="section category-gallery" aria-labelledby="cactuario-gallery-title">
+      <div class="container">
+        <header class="category-gallery__head" data-reveal>
+          <h2 id="cactuario-gallery-title" class="section__title section__title--lg">Texturas, espinas y geometrías</h2>
+          <p class="section__intro">El Cactuario se disfruta de cerca: cada planta tiene una silueta, una textura y un ritmo de crecimiento propio.</p>
+        </header>
+        <div class="category-gallery__grid">
+          <figure class="category-gallery__item category-gallery__item--tall" data-reveal>
+            <img src="assets/cactuario.jpg" alt="Cactus y suculentas en el Cactuario de SA Jardinería" width="600" height="800" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="category-gallery__item" data-reveal>
+            <img src="assets/interior-plantas-maceta.jpg" alt="Composición de plantas resistentes en maceta" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="category-gallery__item" data-reveal>
+            <img src="assets/riego-humedad.jpg" alt="Detalle de cuidado y riego en plantas de bajo consumo hídrico" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="category-gallery__item category-gallery__item--wide" data-reveal>
+            <img src="assets/sendero-vegetacion.jpg" alt="Rincón vegetal mediterráneo en SA Jardinería" width="900" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="category-gallery__item" data-reveal>
+            <img src="assets/cactuario.jpg" alt="Detalle de cactus con formas escultóricas" width="600" height="450" loading="lazy" decoding="async" style="object-position: 30% 60%;" />
+          </figure>
+          <figure class="category-gallery__item" data-reveal>
+            <img src="assets/regalo-detalle.jpg" alt="Composición de suculentas como detalle decorativo" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="category-gallery__item category-gallery__item--wide" data-reveal>
+            <img src="assets/puertas-abiertas.jpg" alt="Vivero al aire libre con plantas expuestas al sol" width="900" height="450" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="category-final-cta" aria-labelledby="cactuario-cta-title">
+      <div class="container category-final-cta__inner" data-reveal>
+        <p class="section__eyebrow section__eyebrow--on-dark">Visita presencial</p>
+        <h2 id="cactuario-cta-title" class="section__title section__title--lg">Ven a descubrir el Cactuario</h2>
+        <p class="category-final-cta__text">
+          Estamos en la carretera de Valldemossa. Recorre el Garden, compara especies y pregunta al equipo antes de elegir.
+        </p>
+        <div class="category-final-cta__actions">
+          <a class="btn btn--primary" href="contacto.html">Cómo llegar</a>
+          <a class="btn btn--secondary btn--on-dark" href="garden.html">Volver a Garden</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__wrap">
+      <div class="footer__top">
+        <a class="footer__brand" href="index.html#inicio" aria-label="SA Jardinería — Inicio">
+          <img class="footer__logo-img" src="logo-blanco.png" width="160" height="42" alt="" decoding="async" />
+        </a>
+        <nav class="footer__nav" aria-label="Enlaces adicionales">
+          <a href="index.html#galeria">Galería</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="garden.html">Garden</a>
+        </nav>
+      </div>
+      <p class="footer__copy">
+        © <span id="year"></span> SA Jardinería · Carr. de Valldemossa, KM 9,3 · Illes Balears ·
+        <a href="index.html#inicio">Inicio</a>
+      </p>
+      <p class="footer__legal">Sitio informativo. Sin venta online.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

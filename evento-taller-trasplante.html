@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Detalle del taller de trasplante de SA Jardinería en Valldemossa. Actividad presencial para aprender a cuidar plantas, elegir sustrato, maceta y riego con acompañamiento del equipo." />
+  <meta name="theme-color" content="#3A332F" />
+  <title>Taller de trasplante | SA Jardinería · Valldemossa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/taller-transplante.jpg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-event">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header" data-header>
+    <div class="header__bar">
+      <a class="header__logo" href="index.html#inicio" aria-label="SA Jardinería — Inicio">
+        <img class="header__logo-img" src="logo.png" width="180" height="48" alt="" decoding="async" />
+      </a>
+
+      <nav class="header__nav" id="site-nav" aria-label="Secciones principales">
+        <div class="header__nav-pill">
+          <ul class="header__links">
+            <li><a href="index.html#experiencia" data-nav-link>Experiencia</a></li>
+            <li><a href="index.html#quienes-somos" data-nav-link>Nosotros</a></li>
+            <li class="nav-dd" data-nav-dropdown>
+              <button type="button" class="nav-dd__trigger" id="nav-garden-btn" aria-expanded="false" aria-controls="nav-garden-menu" aria-haspopup="true" data-nav-garden-trigger>
+                Garden
+                <svg class="nav-dd__chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <div class="nav-dd__panel" id="nav-garden-menu" role="menu" aria-labelledby="nav-garden-btn">
+                <a href="garden.html#garden-intro" class="nav-dd__all" role="menuitem">Ver todo Garden</a>
+                <div class="nav-dd__grid" role="none">
+                  <a href="garden.html#garden-temporada" class="nav-dd__item" role="menuitem"><span data-lucide="sun" class="nav-dd__ico" aria-hidden="true"></span><span>Plantas de temporada</span></a>
+                  <a href="garden.html#garden-autoctonas" class="nav-dd__item" role="menuitem"><span data-lucide="map-pin" class="nav-dd__ico" aria-hidden="true"></span><span>Autóctonas · Baleares</span></a>
+                  <a href="cactuario.html" class="nav-dd__item" role="menuitem"><span data-lucide="shrub" class="nav-dd__ico" aria-hidden="true"></span><span>Cactuario</span></a>
+                  <a href="garden.html#garden-bonsais" class="nav-dd__item" role="menuitem"><span data-lucide="tree-deciduous" class="nav-dd__ico" aria-hidden="true"></span><span>Bonsáis</span></a>
+                  <a href="garden.html#garden-orquideario" class="nav-dd__item" role="menuitem"><span data-lucide="flower-2" class="nav-dd__ico" aria-hidden="true"></span><span>Orquideario</span></a>
+                  <a href="garden.html#garden-interior" class="nav-dd__item" role="menuitem"><span data-lucide="home" class="nav-dd__ico" aria-hidden="true"></span><span>Plantas de interior</span></a>
+                  <a href="garden.html#garden-macetas" class="nav-dd__item" role="menuitem"><span data-lucide="package" class="nav-dd__ico" aria-hidden="true"></span><span>Macetas</span></a>
+                  <a href="garden.html#garden-antiguedades" class="nav-dd__item" role="menuitem"><span data-lucide="landmark" class="nav-dd__ico" aria-hidden="true"></span><span>Antigüedades</span></a>
+                </div>
+              </div>
+            </li>
+            <li><a href="tienda.html" data-nav-link>Tienda</a></li>
+            <li><a href="index.html#eventos" data-nav-link aria-current="page">Eventos</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__cta" href="contacto.html" data-nav-contact>Cómo llegar</a>
+        <button type="button" class="header__menu-btn" id="nav-toggle" aria-expanded="false" aria-controls="mobile-panel" aria-label="Abrir menú de navegación">
+          <span class="header__menu-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <div class="mobile-panel__backdrop" id="mobile-backdrop" tabindex="-1"></div>
+    <div class="mobile-panel__sheet" role="dialog" aria-modal="true" aria-label="Menú">
+      <div class="mobile-panel__head">
+        <span class="mobile-panel__title">Menú</span>
+        <button type="button" class="mobile-panel__close" id="mobile-close" aria-label="Cerrar menú"><span aria-hidden="true"></span></button>
+      </div>
+      <nav class="mobile-panel__nav" aria-label="Móvil">
+        <a href="index.html#experiencia">Experiencia</a>
+        <a href="index.html#quienes-somos">Nosotros</a>
+        <details class="mobile-panel__details">
+          <summary class="mobile-panel__summary">Garden</summary>
+          <div class="mobile-panel__sub">
+            <a href="garden.html#garden-intro"><span data-lucide="layout-grid" class="mobile-panel__ico" aria-hidden="true"></span> Todo Garden</a>
+            <a href="garden.html#garden-temporada"><span data-lucide="sun" class="mobile-panel__ico" aria-hidden="true"></span> Plantas de temporada</a>
+            <a href="garden.html#garden-autoctonas"><span data-lucide="map-pin" class="mobile-panel__ico" aria-hidden="true"></span> Autóctonas · Baleares</a>
+            <a href="cactuario.html"><span data-lucide="shrub" class="mobile-panel__ico" aria-hidden="true"></span> Cactuario</a>
+            <a href="garden.html#garden-bonsais"><span data-lucide="tree-deciduous" class="mobile-panel__ico" aria-hidden="true"></span> Bonsáis</a>
+            <a href="garden.html#garden-orquideario"><span data-lucide="flower-2" class="mobile-panel__ico" aria-hidden="true"></span> Orquideario</a>
+            <a href="garden.html#garden-interior"><span data-lucide="home" class="mobile-panel__ico" aria-hidden="true"></span> Plantas de interior</a>
+            <a href="garden.html#garden-macetas"><span data-lucide="package" class="mobile-panel__ico" aria-hidden="true"></span> Macetas</a>
+            <a href="garden.html#garden-antiguedades"><span data-lucide="landmark" class="mobile-panel__ico" aria-hidden="true"></span> Antigüedades</a>
+          </div>
+        </details>
+        <a href="tienda.html">Tienda</a>
+        <a href="index.html#eventos" aria-current="page">Eventos</a>
+        <a class="mobile-panel__cta" href="contacto.html">Cómo llegar</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="event-hero" aria-labelledby="event-hero-title">
+      <div class="event-hero__media" aria-hidden="true">
+        <img src="assets/taller-transplante.jpg" alt="" width="1600" height="900" decoding="async" fetchpriority="high" />
+      </div>
+      <div class="event-hero__veil" aria-hidden="true"></div>
+      <div class="container event-hero__inner">
+        <nav class="event-breadcrumb" aria-label="Miga de pan">
+          <a href="index.html#eventos">Eventos</a>
+          <span class="event-breadcrumb__sep" aria-hidden="true">/</span>
+          <span aria-current="page">Taller de trasplante</span>
+        </nav>
+        <p class="event-hero__eyebrow">Evento presencial · Garden</p>
+        <ul class="event-hero__nano" aria-label="Datos rápidos del evento">
+          <li class="event-hero__nano-item">
+            <span data-lucide="calendar-days" class="event-hero__nano-ico" aria-hidden="true"></span>
+            <span>11 jun</span>
+          </li>
+          <li class="event-hero__nano-item">
+            <span data-lucide="clock" class="event-hero__nano-ico" aria-hidden="true"></span>
+            <span>2 h</span>
+          </li>
+          <li class="event-hero__nano-item">
+            <span data-lucide="map-pin" class="event-hero__nano-ico" aria-hidden="true"></span>
+            <span>Valldemossa</span>
+          </li>
+          <li class="event-hero__nano-item event-hero__nano-item--soft">
+            <span data-lucide="users" class="event-hero__nano-ico" aria-hidden="true"></span>
+            <span>12 plazas</span>
+          </li>
+        </ul>
+        <h1 id="event-hero-title" class="event-hero__title">Taller de trasplante</h1>
+        <p class="event-hero__lead">
+          Una sesión práctica para aprender a cambiar una planta de maceta con criterio: sustrato, drenaje, raíces, riego y pequeños gestos que ayudan a que la planta siga creciendo mejor.
+        </p>
+        <div class="event-hero__actions">
+          <a class="btn btn--primary" href="contacto.html">Quiero asistir</a>
+          <a class="btn btn--secondary btn--on-dark" href="index.html#eventos">Ver otros eventos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resumen -->
+    <section class="event-summary-wrap" aria-labelledby="event-summary-title">
+      <div class="container">
+        <article class="event-summary" data-reveal>
+          <div class="event-summary__top">
+            <div class="event-summary__intro">
+              <span class="event-summary__status">Próximo taller</span>
+              <h2 id="event-summary-title" class="event-summary__title">Taller de trasplante</h2>
+              <p class="event-summary__text">
+                Aprende cuándo, cómo y por qué trasplantar una planta para que el cambio de maceta no sea solo estético, sino también saludable.
+              </p>
+            </div>
+            <div class="event-summary__actions">
+              <a class="btn btn--primary" href="contacto.html">Preguntar por el taller</a>
+              <a class="btn btn--secondary" href="index.html#eventos">Ver otros eventos</a>
+            </div>
+          </div>
+          <dl class="event-meta">
+            <div class="event-meta__item">
+              <dt><span data-lucide="calendar-days" class="event-meta__ico" aria-hidden="true"></span> Fecha</dt>
+              <dd>11 jun · 10:30</dd>
+            </div>
+            <div class="event-meta__item">
+              <dt><span data-lucide="clock" class="event-meta__ico" aria-hidden="true"></span> Duración</dt>
+              <dd>2 horas</dd>
+            </div>
+            <div class="event-meta__item">
+              <dt><span data-lucide="map-pin" class="event-meta__ico" aria-hidden="true"></span> Ubicación</dt>
+              <dd>SA Jardinería · Valldemossa</dd>
+            </div>
+            <div class="event-meta__item">
+              <dt><span data-lucide="ticket" class="event-meta__ico" aria-hidden="true"></span> Precio</dt>
+              <dd>25 €</dd>
+            </div>
+            <div class="event-meta__item">
+              <dt><span data-lucide="users" class="event-meta__ico" aria-hidden="true"></span> Plazas</dt>
+              <dd>12 personas</dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <!-- Descripción -->
+    <section class="section event-content" aria-labelledby="event-desc-title">
+      <div class="container">
+        <div class="event-content__grid">
+          <div class="event-main" data-reveal>
+            <h2 id="event-desc-title" class="section__title section__title--lg">Descripción del taller</h2>
+            <p>
+              Trasplantar una planta parece sencillo, pero elegir bien el momento, la maceta, el sustrato y el riego posterior puede marcar la diferencia. En este taller veremos el proceso paso a paso, con explicaciones claras y consejos prácticos para aplicar después en casa.
+            </p>
+            <p>
+              La actividad está pensada para aprender mirando, preguntando y entendiendo qué necesita cada planta antes de cambiarla de recipiente.
+            </p>
+            <ul class="event-list">
+              <li>Cuándo conviene trasplantar</li>
+              <li>Cómo revisar raíces y sustrato</li>
+              <li>Qué maceta elegir</li>
+              <li>Cómo evitar exceso de agua</li>
+              <li>Qué hacer después del trasplante</li>
+            </ul>
+          </div>
+          <aside class="event-sidebar" data-reveal>
+            <div class="event-info-card">
+              <h3>Para quién es</h3>
+              <p>
+                Para personas que cuidan plantas en casa, terraza o jardín y quieren entender mejor cómo acompañar su crecimiento. No hace falta experiencia previa: basta con curiosidad y ganas de aprender con calma.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qué encontrarás -->
+    <section class="section event-features" aria-labelledby="event-features-title">
+      <div class="container">
+        <header class="event-features__head" data-reveal>
+          <h2 id="event-features-title" class="section__title section__title--lg">Qué encontrarás en el taller</h2>
+          <p class="section__intro">Una sesión práctica, cercana y pensada para resolver dudas reales.</p>
+        </header>
+        <div class="event-feature-grid">
+          <article class="event-feature-card" data-reveal>
+            <span data-lucide="sprout" class="event-feature-card__ico" aria-hidden="true"></span>
+            <h3>Demostración práctica</h3>
+            <p>Verás el proceso completo de trasplante, desde la elección de maceta hasta el primer riego.</p>
+          </article>
+          <article class="event-feature-card" data-reveal>
+            <span data-lucide="shovel" class="event-feature-card__ico" aria-hidden="true"></span>
+            <h3>Materiales y sustrato</h3>
+            <p>Hablaremos de drenaje, mezclas, textura del sustrato y errores comunes.</p>
+          </article>
+          <article class="event-feature-card" data-reveal>
+            <span data-lucide="message-circle" class="event-feature-card__ico" aria-hidden="true"></span>
+            <h3>Consejo presencial</h3>
+            <p>Podrás preguntar dudas concretas y entender mejor qué necesita cada tipo de planta.</p>
+          </article>
+          <article class="event-feature-card" data-reveal>
+            <span data-lucide="leaf" class="event-feature-card__ico" aria-hidden="true"></span>
+            <h3>Cuidado posterior</h3>
+            <p>Aprenderás pequeños gestos para que la planta se adapte mejor después del cambio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manifiesto -->
+    <section class="event-manifesto" aria-labelledby="event-manifesto-title">
+      <div class="container event-manifesto__inner" data-reveal>
+        <h2 id="event-manifesto-title" class="section__title section__title--lg">Trasplantar también es observar</h2>
+        <p>
+          Cambiar una planta de maceta no es solo moverla a un recipiente más bonito. Es mirar raíces, entender crecimiento, revisar humedad y darle espacio para continuar.
+        </p>
+        <p class="event-manifesto__secondary">Por eso este taller no busca correr: busca enseñar a mirar mejor.</p>
+        <a class="btn btn--primary btn--on-dark" href="contacto.html">Consultar próximo taller</a>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="section event-gallery" id="galeria-evento" aria-labelledby="event-gallery-title">
+      <div class="container">
+        <header class="event-gallery__head" data-reveal>
+          <h2 id="event-gallery-title" class="section__title section__title--lg">Momentos del Garden</h2>
+          <p class="section__intro">Materiales, plantas, manos y rincones que forman parte de la experiencia presencial.</p>
+        </header>
+        <div class="event-gallery__grid">
+          <figure class="event-gallery__item event-gallery__item--hero" data-reveal>
+            <img src="assets/taller-transplante.jpg" alt="Taller de trasplante en SA Jardinería" width="900" height="680" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="event-gallery__item" data-reveal>
+            <img src="assets/semillero.jpg" alt="Semillero y plantas jóvenes en el Garden" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="event-gallery__item" data-reveal>
+            <img src="assets/interior-plantas-maceta.jpg" alt="Plantas en maceta preparadas para interior" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="event-gallery__item" data-reveal>
+            <img src="assets/riego-humedad.jpg" alt="Materiales de riego y cuidado vegetal" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="event-gallery__item" data-reveal>
+            <img src="assets/sendero-vegetacion.jpg" alt="Sendero vegetal en SA Jardinería" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="event-gallery__item" data-reveal>
+            <img src="assets/encuentros-equipos.jpg" alt="Encuentro del equipo en el Garden" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Antes de venir -->
+    <section class="section event-before" aria-labelledby="event-before-title">
+      <div class="container">
+        <header class="event-before__head" data-reveal>
+          <h2 id="event-before-title" class="section__title section__title--lg">Antes de venir</h2>
+          <p class="section__intro">No hace falta traer nada especial, pero estos detalles pueden ayudarte a aprovechar mejor la sesión.</p>
+        </header>
+        <div class="event-before__grid">
+          <article class="event-before__card" data-reveal>
+            <h3>Trae tus dudas</h3>
+            <p>Puedes venir con preguntas sobre tus plantas, macetas o problemas habituales de riego.</p>
+          </article>
+          <article class="event-before__card" data-reveal>
+            <h3>Observa tus plantas</h3>
+            <p>Si tienes una planta en casa que te preocupa, fíjate en hojas, sustrato, luz y frecuencia de riego.</p>
+          </article>
+          <article class="event-before__card" data-reveal>
+            <h3>Ven con tiempo</h3>
+            <p>El taller está pensado para aprender sin prisa, preguntar y disfrutar del entorno del Garden.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="event-final-cta" aria-labelledby="event-final-title">
+      <div class="container event-final-cta__inner" data-reveal>
+        <p class="section__eyebrow section__eyebrow--on-dark">Actividad presencial</p>
+        <h2 id="event-final-title" class="section__title section__title--lg">¿Te interesa este taller?</h2>
+        <p class="event-final-cta__text">
+          Escríbenos o ven a vernos para consultar próximas fechas, plazas o actividades relacionadas.
+        </p>
+        <div class="event-final-cta__actions">
+          <a class="btn btn--primary" href="contacto.html">Preguntar por el taller</a>
+          <a class="btn btn--secondary btn--on-dark" href="index.html#eventos">Ver otros eventos</a>
+        </div>
+        <p class="event-final-cta__note">Sitio informativo. Sin venta online.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__wrap">
+      <div class="footer__top">
+        <a class="footer__brand" href="index.html#inicio" aria-label="SA Jardinería — Inicio">
+          <img class="footer__logo-img" src="logo-blanco.png" width="160" height="42" alt="" decoding="async" />
+        </a>
+        <nav class="footer__nav" aria-label="Enlaces adicionales">
+          <a href="garden.html">Garden</a>
+          <a href="index.html#eventos">Eventos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+      <p class="footer__copy">
+        © <span id="year"></span> SA Jardinería · Carr. de Valldemossa, KM 9,3 · Illes Balears ·
+        <a href="index.html#inicio">Inicio</a>
+      </p>
+      <p class="footer__legal">Sitio informativo. Sin venta online.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

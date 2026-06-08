@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descubre la tienda de SA Jardinería en Valldemossa: macetas, decoración, herramientas, riego, sustratos, fitosanitarios y complementos para cuidar tus plantas con consejo presencial." />
+  <meta name="theme-color" content="#3A332F" />
+  <title>Tienda | SA Jardinería · Valldemossa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/interior-plantas-maceta.jpg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-shop">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header" data-header>
+    <div class="header__bar">
+      <a class="header__logo" href="index.html#inicio" aria-label="SA Jardinería — Inicio">
+        <img class="header__logo-img" src="logo.png" width="180" height="48" alt="" decoding="async" />
+      </a>
+
+      <nav class="header__nav" id="site-nav" aria-label="Secciones principales">
+        <div class="header__nav-pill">
+          <ul class="header__links">
+            <li><a href="index.html#experiencia" data-nav-link>Experiencia</a></li>
+            <li><a href="index.html#quienes-somos" data-nav-link>Nosotros</a></li>
+            <li class="nav-dd" data-nav-dropdown>
+              <button type="button" class="nav-dd__trigger" id="nav-garden-btn" aria-expanded="false" aria-controls="nav-garden-menu" aria-haspopup="true" data-nav-garden-trigger>
+                Garden
+                <svg class="nav-dd__chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <div class="nav-dd__panel" id="nav-garden-menu" role="menu" aria-labelledby="nav-garden-btn">
+                <a href="garden.html#garden-intro" class="nav-dd__all" role="menuitem">Ver todo Garden</a>
+                <div class="nav-dd__grid" role="none">
+                  <a href="garden.html#garden-temporada" class="nav-dd__item" role="menuitem"><span data-lucide="sun" class="nav-dd__ico" aria-hidden="true"></span><span>Plantas de temporada</span></a>
+                  <a href="garden.html#garden-autoctonas" class="nav-dd__item" role="menuitem"><span data-lucide="map-pin" class="nav-dd__ico" aria-hidden="true"></span><span>Autóctonas · Baleares</span></a>
+                  <a href="cactuario.html" class="nav-dd__item" role="menuitem"><span data-lucide="shrub" class="nav-dd__ico" aria-hidden="true"></span><span>Cactuario</span></a>
+                  <a href="garden.html#garden-bonsais" class="nav-dd__item" role="menuitem"><span data-lucide="tree-deciduous" class="nav-dd__ico" aria-hidden="true"></span><span>Bonsáis</span></a>
+                  <a href="garden.html#garden-orquideario" class="nav-dd__item" role="menuitem"><span data-lucide="flower-2" class="nav-dd__ico" aria-hidden="true"></span><span>Orquideario</span></a>
+                  <a href="garden.html#garden-interior" class="nav-dd__item" role="menuitem"><span data-lucide="home" class="nav-dd__ico" aria-hidden="true"></span><span>Plantas de interior</span></a>
+                  <a href="garden.html#garden-macetas" class="nav-dd__item" role="menuitem"><span data-lucide="package" class="nav-dd__ico" aria-hidden="true"></span><span>Macetas</span></a>
+                  <a href="garden.html#garden-antiguedades" class="nav-dd__item" role="menuitem"><span data-lucide="landmark" class="nav-dd__ico" aria-hidden="true"></span><span>Antigüedades</span></a>
+                </div>
+              </div>
+            </li>
+            <li><a href="tienda.html" data-nav-link aria-current="page">Tienda</a></li>
+            <li><a href="index.html#eventos" data-nav-link>Eventos</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__cta" href="contacto.html" data-nav-contact>Cómo llegar</a>
+        <button type="button" class="header__menu-btn" id="nav-toggle" aria-expanded="false" aria-controls="mobile-panel" aria-label="Abrir menú de navegación">
+          <span class="header__menu-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <div class="mobile-panel__backdrop" id="mobile-backdrop" tabindex="-1"></div>
+    <div class="mobile-panel__sheet" role="dialog" aria-modal="true" aria-label="Menú">
+      <div class="mobile-panel__head">
+        <span class="mobile-panel__title">Menú</span>
+        <button type="button" class="mobile-panel__close" id="mobile-close" aria-label="Cerrar menú"><span aria-hidden="true"></span></button>
+      </div>
+      <nav class="mobile-panel__nav" aria-label="Móvil">
+        <a href="index.html#experiencia">Experiencia</a>
+        <a href="index.html#quienes-somos">Nosotros</a>
+        <details class="mobile-panel__details">
+          <summary class="mobile-panel__summary">Garden</summary>
+          <div class="mobile-panel__sub">
+            <a href="garden.html#garden-intro"><span data-lucide="layout-grid" class="mobile-panel__ico" aria-hidden="true"></span> Todo Garden</a>
+            <a href="garden.html#garden-temporada"><span data-lucide="sun" class="mobile-panel__ico" aria-hidden="true"></span> Plantas de temporada</a>
+            <a href="garden.html#garden-autoctonas"><span data-lucide="map-pin" class="mobile-panel__ico" aria-hidden="true"></span> Autóctonas · Baleares</a>
+            <a href="cactuario.html"><span data-lucide="shrub" class="mobile-panel__ico" aria-hidden="true"></span> Cactuario</a>
+            <a href="garden.html#garden-bonsais"><span data-lucide="tree-deciduous" class="mobile-panel__ico" aria-hidden="true"></span> Bonsáis</a>
+            <a href="garden.html#garden-orquideario"><span data-lucide="flower-2" class="mobile-panel__ico" aria-hidden="true"></span> Orquideario</a>
+            <a href="garden.html#garden-interior"><span data-lucide="home" class="mobile-panel__ico" aria-hidden="true"></span> Plantas de interior</a>
+            <a href="garden.html#garden-macetas"><span data-lucide="package" class="mobile-panel__ico" aria-hidden="true"></span> Macetas</a>
+            <a href="garden.html#garden-antiguedades"><span data-lucide="landmark" class="mobile-panel__ico" aria-hidden="true"></span> Antigüedades</a>
+          </div>
+        </details>
+        <a href="tienda.html" aria-current="page">Tienda</a>
+        <a href="index.html#eventos">Eventos</a>
+        <a class="mobile-panel__cta" href="contacto.html">Cómo llegar</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main" data-shop-page>
+    <!-- Hero -->
+    <section class="shop-page-hero" aria-labelledby="shop-hero-title">
+      <div class="shop-page-hero__media" aria-hidden="true">
+        <img src="assets/interior-plantas-maceta.jpg" alt="" width="1600" height="900" decoding="async" fetchpriority="high" />
+      </div>
+      <div class="shop-page-hero__veil" aria-hidden="true"></div>
+      <div class="container shop-page-hero__inner">
+        <p class="section__eyebrow section__eyebrow--on-dark">Tienda · Complementos</p>
+        <h1 id="shop-hero-title" class="shop-page-hero__title">Todo para cuidar, proteger y embellecer tus plantas</h1>
+        <p class="shop-page-hero__lead">
+          Una selección presencial de macetas, herramientas, sustratos, riego, decoración y soluciones de cuidado, elegida con criterio para acompañar cada visita al Garden.
+        </p>
+        <div class="shop-page-hero__actions">
+          <a class="btn btn--primary" href="#catalogo-tienda">Explorar tienda</a>
+          <a class="btn btn--secondary btn--on-dark" href="contacto.html#como-llegar">Cómo llegar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section shop-intro" id="tienda-intro" aria-labelledby="shop-intro-title">
+      <div class="container">
+        <div class="shop-intro__grid">
+          <div class="shop-intro__text" data-reveal>
+            <p class="section__eyebrow">Selección presencial</p>
+            <h2 id="shop-intro-title" class="section__title section__title--lg">No es un catálogo infinito. Es una tienda para elegir mejor.</h2>
+            <p class="section__lead">
+              En SA Jardinería la tienda acompaña al Garden: materiales, piezas y soluciones que ayudan a cuidar plantas reales en espacios reales. Puedes comparar tamaños, tocar acabados y preguntar antes de decidir.
+            </p>
+          </div>
+          <aside class="shop-intro-card" data-reveal>
+            <p>
+              Los precios son orientativos y pueden variar según formato, temporada o disponibilidad. Para confirmar un producto concreto, lo mejor es consultarlo en tienda o contactar antes de venir.
+            </p>
+            <ul class="shop-intro-card__pills" aria-label="Familias de producto">
+              <li>Macetas</li>
+              <li>Riego</li>
+              <li>Sustratos</li>
+              <li>Decoración</li>
+              <li>Fitosanitarios</li>
+              <li>Herramientas</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo -->
+    <section class="section shop-catalog" id="catalogo-tienda" aria-labelledby="shop-catalog-title" data-shop-catalog>
+      <div class="container">
+        <header class="shop-catalog__header" data-reveal>
+          <h2 id="shop-catalog-title" class="section__title section__title--lg">Explora la selección</h2>
+          <p class="section__intro">Filtra por categoría o busca lo que necesitas antes de venir.</p>
+        </header>
+
+        <div class="shop-toolbar" data-reveal>
+          <label class="shop-search">
+            <span class="visually-hidden" id="shop-search-label">Buscar en la tienda</span>
+            <span data-lucide="search" class="shop-search__ico" aria-hidden="true"></span>
+            <input type="search" id="shop-search" data-shop-search placeholder="Buscar macetas, riego, sustrato, decoración…" aria-labelledby="shop-search-label" autocomplete="off" />
+          </label>
+
+          <div class="shop-filter-group">
+            <span class="shop-filter-label" id="shop-cat-label">Categoría</span>
+            <div class="shop-filter-list shop-filter-list--scroll" role="group" aria-labelledby="shop-cat-label" data-shop-categories>
+              <button type="button" class="shop-filter-chip is-active" data-category="Todo" aria-pressed="true">Todo</button>
+              <button type="button" class="shop-filter-chip" data-category="Macetas" aria-pressed="false">Macetas</button>
+              <button type="button" class="shop-filter-chip" data-category="Riego" aria-pressed="false">Riego</button>
+              <button type="button" class="shop-filter-chip" data-category="Sustratos" aria-pressed="false">Sustratos</button>
+              <button type="button" class="shop-filter-chip" data-category="Herramientas" aria-pressed="false">Herramientas</button>
+              <button type="button" class="shop-filter-chip" data-category="Decoración" aria-pressed="false">Decoración</button>
+              <button type="button" class="shop-filter-chip" data-category="Fitosanitarios" aria-pressed="false">Fitosanitarios</button>
+              <button type="button" class="shop-filter-chip" data-category="Regalo" aria-pressed="false">Regalo</button>
+              <button type="button" class="shop-filter-chip" data-category="Temporada" aria-pressed="false">Temporada</button>
+            </div>
+          </div>
+
+          <div class="shop-filter-group">
+            <span class="shop-filter-label" id="shop-tag-label">Uso</span>
+            <div class="shop-filter-list shop-filter-list--scroll" role="group" aria-labelledby="shop-tag-label" data-shop-tags>
+              <button type="button" class="shop-filter-chip" data-tag="Interior" aria-pressed="false">Interior</button>
+              <button type="button" class="shop-filter-chip" data-tag="Exterior" aria-pressed="false">Exterior</button>
+              <button type="button" class="shop-filter-chip" data-tag="Fácil cuidado" aria-pressed="false">Fácil cuidado</button>
+              <button type="button" class="shop-filter-chip" data-tag="Regalo" aria-pressed="false">Regalo</button>
+              <button type="button" class="shop-filter-chip" data-tag="Asesoramiento" aria-pressed="false">Asesoramiento</button>
+              <button type="button" class="shop-filter-chip" data-tag="Bajo riego" aria-pressed="false">Bajo riego</button>
+            </div>
+          </div>
+
+          <div class="shop-toolbar__row">
+            <label class="shop-sort">
+              <span class="shop-sort__label" for="shop-sort">Ordenar</span>
+              <select id="shop-sort" data-shop-sort>
+                <option value="recommended">Orden recomendado</option>
+                <option value="price-asc">Precio orientativo: menor a mayor</option>
+                <option value="price-desc">Precio orientativo: mayor a menor</option>
+                <option value="name">Nombre A-Z</option>
+              </select>
+            </label>
+            <button type="button" class="btn btn--secondary shop-toolbar__clear" data-shop-clear>Limpiar filtros</button>
+            <p class="shop-results-meta" data-shop-count aria-live="polite">Mostrando 12 selecciones</p>
+          </div>
+        </div>
+
+        <div class="shop-grid" data-shop-grid role="list"></div>
+
+        <div class="shop-empty" data-shop-empty hidden>
+          <h3>No hemos encontrado esa selección</h3>
+          <p>Prueba con otra búsqueda o ven directamente al Garden. Muchas piezas cambian por temporada y no todo aparece en la web.</p>
+          <div class="shop-empty__actions">
+            <button type="button" class="btn btn--secondary" data-shop-clear>Limpiar filtros</button>
+            <a class="btn btn--primary" href="contacto.html">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo funciona -->
+    <section class="section shop-how" aria-labelledby="shop-how-title">
+      <div class="container">
+        <header class="shop-how__head" data-reveal>
+          <h2 id="shop-how-title" class="section__title section__title--lg">Cómo funciona la tienda</h2>
+          <p class="section__intro">La web te orienta, pero la elección final sucede mejor en persona.</p>
+        </header>
+        <div class="shop-how__grid">
+          <article class="shop-how-card" data-reveal>
+            <h3>Mira y compara</h3>
+            <p>Las medidas, texturas y acabados se entienden mejor en tienda.</p>
+          </article>
+          <article class="shop-how-card" data-reveal>
+            <h3>Pregunta antes de decidir</h3>
+            <p>Te ayudamos a elegir según planta, espacio, luz, riego y mantenimiento.</p>
+          </article>
+          <article class="shop-how-card" data-reveal>
+            <h3>La selección cambia</h3>
+            <p>Algunas piezas dependen de temporada, formato y disponibilidad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="shop-final-cta" aria-labelledby="shop-final-title">
+      <div class="container shop-final-cta__inner" data-reveal>
+        <p class="section__eyebrow section__eyebrow--on-dark">Tienda física</p>
+        <h2 id="shop-final-title" class="section__title section__title--lg">Ven a descubrir la selección completa</h2>
+        <p class="shop-final-cta__text">
+          Macetas, materiales, herramientas, decoración y soluciones de cuidado para acompañar tu visita al Garden.
+        </p>
+        <div class="shop-final-cta__actions">
+          <a class="btn btn--primary" href="contacto.html#como-llegar">Cómo llegar</a>
+          <a class="btn btn--secondary btn--on-dark" href="contacto.html">Contactar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__wrap">
+      <div class="footer__top">
+        <a class="footer__brand" href="index.html#inicio" aria-label="SA Jardinería — Inicio">
+          <img class="footer__logo-img" src="logo-blanco.png" width="160" height="42" alt="" decoding="async" />
+        </a>
+        <nav class="footer__nav" aria-label="Enlaces adicionales">
+          <a href="garden.html">Garden</a>
+          <a href="tienda.html">Tienda</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+      <p class="footer__copy">
+        © <span id="year"></span> SA Jardinería · Carr. de Valldemossa, KM 9,3 · Illes Balears ·
+        <a href="index.html#inicio">Inicio</a>
+      </p>
+      <p class="footer__legal">Sitio informativo. Sin venta online.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
