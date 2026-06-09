@@ -5410,7 +5410,7 @@ main {
   display: flex;
   align-items: flex-start;
   margin-top: calc(-1 * var(--header-h));
-  padding-top: calc(var(--header-h) + clamp(2.5rem, 6vw, 4.5rem));
+  padding-top: calc(var(--header-h) + clamp(2.5rem, 6vw, 4.5rem) + 0.5rem);
   overflow: hidden;
   border-radius: 0 0 clamp(0px, 4vw, 2.5rem) clamp(0px, 4vw, 2.5rem);
 }
@@ -6018,7 +6018,7 @@ main {
 
   .shop-page-hero {
     min-height: clamp(440px, 62vh, 560px);
-    padding-top: calc(var(--header-h) + clamp(1.75rem, 5vw, 3rem));
+    padding-top: calc(var(--header-h) + clamp(1.75rem, 5vw, 3rem) + 0.5rem);
   }
 
   .shop-page-hero__actions {
