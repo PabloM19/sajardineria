@@ -5408,9 +5408,9 @@ main {
   position: relative;
   min-height: clamp(520px, 68vh, 720px);
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   margin-top: calc(-1 * var(--header-h));
-  padding-top: var(--header-h);
+  padding-top: calc(var(--header-h) + clamp(2.5rem, 6vw, 4.5rem));
   overflow: hidden;
   border-radius: 0 0 clamp(0px, 4vw, 2.5rem) clamp(0px, 4vw, 2.5rem);
 }
@@ -5444,7 +5444,7 @@ main {
 .shop-page-hero__inner {
   position: relative;
   z-index: 2;
-  padding: clamp(2.75rem, 6vw, 4.25rem) 0 clamp(3.5rem, 8vw, 5rem);
+  padding: clamp(0.75rem, 2vw, 1.25rem) 0 clamp(3.5rem, 8vw, 5rem);
   color: var(--bg);
   max-width: 640px;
 }
@@ -6018,6 +6018,7 @@ main {
 
   .shop-page-hero {
     min-height: clamp(440px, 62vh, 560px);
+    padding-top: calc(var(--header-h) + clamp(1.75rem, 5vw, 3rem));
   }
 
   .shop-page-hero__actions {
